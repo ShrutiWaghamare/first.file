@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page design</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/bg1.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar .logo{
+    width: 4%;
+    margin: 30px 0px;
+    cursor: pointer;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    width: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+button{
+    padding: 5px 17px;
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 19px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container{
+    width: 50%;
+    height: 100vh;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(6px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.info{
+    width: 550px;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.info h1{
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+
+.info p {
+    color: #deffe1;
+    font-size: 13px;
+    margin: 16px 0px;
+    line-height: 23px;
+}
+
+.info input{
+    width: 50%;
+    padding: 8px 10px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-size: 12px;
+}
+::placeholder{
+    color: rgb(241, 191, 191);
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+#prev, #next{
+    width: 20px;
+    cursor: pointer;
+}
+
+.preview{
+    display: flex;
+    align-items: center;
+    margin: 0px 60px;
+
+}
+
+.preview img{
+    width: 60px;
+    margin: 0px 10px;
+    opacity: 0.4;
+}
+
+.preview .active{
+    display: block;
+    border: 3px solid white;
+    width: 160px;
+    opacity: 1;
+}
+</style>
+<body>
+    <div id="hero">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo">
+            <div class="user">
+                <button type = "button">Explore</button>
+                <img src="img/user.png">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+<div class="info">
+    <h1>DISCOVER</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt id recusandae modi aperiam voluptate ratione illo ullam, eius quis rem corporis dolore a numquam, nam quaconst eius? Quis, quasi. Eligendi!</p>
+    <input type="text" placeholder="Search">
+</div>
+    </div>
+    <div class="slider">
+        <img src="img/left-arrow.png" id="prev">
+        <div class="preview">
+          <img src="img/small1.png" class = "active thumnail">
+          <img src="img/small2.png" class = "thumnail">
+          <img src="img/small3.png" class = "thumnail">
+          <img src="img/small4.png" class = "thumnail">
+          <img src="img/small5.png" class = "thumnail">
+        </div>
+        <img src="img/right-arrow.png" id="next">
+    </div>
+
+    <script>
+        
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        // var thumnail = document.getElementByClassName("thumnail");
+        var hero = document.getElementById("hero");
+
+        var imageArray= [
+            "img/bg1.png",
+            "img/bg2.png",
+            "img/bg3.png",
+            "img/bg4.png",
+            "img/bg5.png",
+    ];
+
+        let i = 0;
+        prev.onclick=()=>{
+           
+            if(i==0){
+                i = 5;
+            }
+            i--;
+            hero.style.backgroundImage = "url('" + imageArray[i] + "')";
+
+        }
+        next.onclick = function(){
+            // console.log(url(imageArray[0]));
+            i++;
+            if(i==5){
+                i=0;
+            }
+            hero.style.backgroundImage = "url('" + imageArray[i] + "')";
+        }
+    </script>
+</body>
+</html>

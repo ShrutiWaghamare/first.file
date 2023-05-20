@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitnesss Club</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        font-family: 'Public Sans', sans-serif;
+        background-image: url("img/gym.jpg");
+        margin: 0px;
+        padding: 0px;
+        background-size: cover;
+        height: 1000px;
+        color: white;
+    }
+    
+    .left {
+        position: absolute;
+        left: 22px;
+        top: 12px;
+        /* border: 2px solid gray; */
+        display: inline-block;
+    }
+    
+    .left img {
+        width: 8%;
+        display: inline-block;
+        padding: 6px;
+        width: 161px;
+    }
+    
+    .left div {
+        text-align: center;
+        line-height: 20px;
+        font-size: 17px;
+    }
+    
+    .mid {
+        /* border: 2px solid gray; */
+        display: block;
+        width: 42%;
+        margin: 3px auto;
+    }
+    
+    .right {
+        /* border: 2px solid gray; */
+        position: absolute;
+        right: 22px;
+        top: 24px;
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .navbar li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 12px;
+    }
+    
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: gray;
+    }
+    
+    .btn {
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        font-family: 'Public Sans', sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 3px 7px;
+        border: 2px solid gray;
+        border-radius: 7px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        /* text-decoration: underline; */
+        /* color: rgb(235, 203, 161); */
+        background-color: rgb(136, 126, 126);
+    }
+    
+    .container {
+        border: 2px solid #c1e5c1;
+        margin: 105px 99px;
+        padding: 37px 33px;
+        width: 27%;
+        border-radius: 17px;
+    }
+    
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 271px;
+        padding: 5px;
+        border: 2px solid rgb(14, 13, 13);
+        margin: 7px auto;
+        border-radius: 7px;
+    }
+    
+    .container h3 {
+        text-align: center;
+    }
+    
+    .container button {
+        display: block;
+        width: 77%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/dumb.jpg">
+            <div>Fitness Club</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href=" #">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Fitness calculator</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join a best gyn of Delhi now</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <!-- <br> -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <!-- <br> -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <!-- <br> -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <!-- <br> -->
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+</html>
