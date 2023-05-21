@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .container {
+      width: 350px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #4a4a4a;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #666666;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #cccccc;
+    }
+    
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #2c66f4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Gmail Login</h2>
+    <form action="https://mail.google.com/mail/u/0/#inbox?compose=new" method="get">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="to" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="body" placeholder="Enter your message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Compose Email</button>
+    </form>
+  </div>
+</body>
+</html>
