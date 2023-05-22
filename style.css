@@ -429,8 +429,9 @@ i {
     border-radius: 15px;
 }
 
-.services .box-container .box:hover {
+.services .box-container .box h6:hover{
     background: rgb(58, 63, 83);
+    color: rgb(255, 255, 255);
 }
 
 .services .box-container.box img {
@@ -520,3 +521,5 @@ p {
 section {
     display: block;
 }
+
+
