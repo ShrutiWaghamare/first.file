@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,20 +37,31 @@
     }
 
     li {
-    text-align: center;
-    background-color: #fff;
-    padding: 9px;
-    margin-bottom: 18px;
-    margin-right: 250px;
-    margin-left: 250px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
+      text-align: center;
+      background-color: #fff;
+      padding: 9px;
+      margin-bottom: 18px;
+      margin-right: 250px;
+      margin-left: 250px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
 
     li:hover {
       background-color: rgb(58, 63, 83);
+    }
+
+    a:hover {
+      /* background-color: rgb(58, 63, 83); */
+      color: white;
     }
 
     li::before {
@@ -73,17 +85,19 @@
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>List Example</h1>
+    <h1>Search Laptop</h1>
   </header>
 
   <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
+    <li><a href="home.php">Apple Macbook chip 13 inch</a> </li>
+    <li><a href="home.php">ASUS-Studiobook-RTX-3070</a> </li>
+    <li><a href="home.php">DELL XPS 13 9315</a> </li>
+    <li><a href="home.php">Hp spectre x360 2in1 laptop</a> </li>
+    <li><a href="home.php">LENOVO 9i 13th Gen (2 in 1 Series)</a> </li>
   </ul>
 </body>
+
 </html>

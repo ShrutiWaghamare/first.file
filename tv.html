@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Example</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Page Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+        }
+
+        li {
+            text-align: center;
+            background-color: #fff;
+            padding: 9px;
+            margin-bottom: 18px;
+            margin-right: 250px;
+            margin-left: 250px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        li:hover {
+            background-color: rgb(58, 63, 83);
+        }
+
+        a:hover {
+            /* background-color: rgb(58, 63, 83); */
+            color: white;
+        }
+
+        li::before {
+            content: "\2022";
+            color: #333;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            li {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Search TV</h1>
+    </header>
+
+    <ul>
+        <li><a href="home.php">LG 80cm(32 inch) HD Ready LED</a></li>
+        <li><a href="home.php">MI 5a 80cm(32 inch) HD Ready LED Smart Android TV</a></li>
+        <li><a href="home.php">OnePlus 55 inch pro 4k TV</a></li>
+        <li><a href="home.php">Samsung 80cm(32 inch) HD Ready LED Smart TV</a></li>
+        <li><a href="home.php">Sansui 80cm(32 inch) HD Ready Samrt Google TV</a></li>
+    </ul>
+</body>
+
+</html>
